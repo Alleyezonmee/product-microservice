@@ -8,6 +8,8 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProductServiceimpl implements ProductService {
 
@@ -44,6 +46,12 @@ public class ProductServiceimpl implements ProductService {
         BeanUtils.copyProperties(product,productDTO);
         productRepository.delete(product);
         return productDTO;
+    }
+
+    @Override
+    public List<Product> findProductByCategory(String category) {
+        return productRepository.findByProductCategory(category);
+
     }
 
 }

@@ -1,0 +1,26 @@
+{
+    "productId":" ",
+    "productName":" ",
+    "productCategory":" ",
+    "imageURLs": ["<Url1>","<Url2>","Url3"],
+    "productDesciption": " ",
+    "variants": {
+            "variantId": "",
+            "RAM": "",
+            "colour": "",
+            "screenSize": "",
+            "screenType": "",
+            "simSlots": "",
+            "batterySize": "",
+            "processor": "",
+            "frontCamera": "",
+            "backCamera": "",
+            "price": "",
+            "graphicsCard": "",
+            "usbPorts": "",
+            "networkDetails" : "",
+            "speakerDetails" : "",
+            "warrantyDetails" : ""
+    }
+
+}

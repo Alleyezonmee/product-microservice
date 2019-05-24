@@ -16,6 +16,15 @@ public class Product {
     private String[] imageURLs;
     private String productDesciption;
     private ArrayList<Variant> variants;
+    private ArrayList<Review> reviews;
+
+    public ArrayList<Review> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(ArrayList<Review> reviews) {
+        this.reviews = reviews;
+    }
 
     public static String getCollectionName() {
         return COLLECTION_NAME;
