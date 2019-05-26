@@ -2,7 +2,7 @@ package com.example.productmicroservice.model;
 
 public class Variant {
     private String variantId;
-    private String RAM;
+    private String ram;
     private String colour;
     private String screenSize;
     private String screenType;
@@ -26,12 +26,12 @@ public class Variant {
         this.variantId = variantId;
     }
 
-    public String getRAM() {
-        return RAM;
+    public String getRam() {
+        return ram;
     }
 
-    public void setRAM(String RAM) {
-        this.RAM = RAM;
+    public void setRam(String ram) {
+        this.ram = ram;
     }
 
     public String getColour() {
@@ -150,7 +150,7 @@ public class Variant {
     public String toString() {
         return "Variant{" +
                 "variantId='" + variantId + '\'' +
-                ", RAM='" + RAM + '\'' +
+                ", ram='" + ram + '\'' +
                 ", colour='" + colour + '\'' +
                 ", screenSize='" + screenSize + '\'' +
                 ", screenType='" + screenType + '\'' +

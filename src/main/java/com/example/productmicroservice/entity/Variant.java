@@ -2,7 +2,7 @@ package com.example.productmicroservice.entity;
 
 public class Variant {
     private String variantId;
-    private String RAM;
+    private String ram;
     private String colour;
     private String screenSize;
     private String screenType;
@@ -27,11 +27,11 @@ public class Variant {
     }
 
     public String getRAM() {
-        return RAM;
+        return ram;
     }
 
-    public void setRAM(String RAM) {
-        this.RAM = RAM;
+    public void setRAM(String ram) {
+        this.ram = ram;
     }
 
     public String getColour() {
@@ -150,7 +150,7 @@ public class Variant {
     public String toString() {
         return "Variant{" +
                 "variantId='" + variantId + '\'' +
-                ", RAM='" + RAM + '\'' +
+                ", RAM='" + ram + '\'' +
                 ", colour='" + colour + '\'' +
                 ", screenSize='" + screenSize + '\'' +
                 ", screenType='" + screenType + '\'' +

@@ -8,15 +8,26 @@ import java.util.Arrays;
 
 @Document(collection = Product.COLLECTION_NAME)
 public class Product {
-    public static final String COLLECTION_NAME = "product";
+    public static final String COLLECTION_NAME = "product"; // name of collection.
+
     @Id
-    private String productId;
-    private String productName;
-    private String productCategory;
-    private String[] imageURLs;
-    private String productDesciption;
-    private ArrayList<Variant> variants;
-    private ArrayList<Review> reviews;
+    private String productId; // unique id.
+
+    private String productName; // name of the product.
+
+    private String productCategory; // category in which product falls.
+                                    // Should be given as "Phones" or "Laptops" or "Tvs".
+
+    private String[] imageURLs; // array of image urls for the product.
+
+    private String productDescription; // brief description of product.
+
+    private ArrayList<Variant> variants; // a list containing all the detail about the specification a product.
+
+    private ArrayList<Review> reviews; //  a list containing reviews of the product.
+
+
+    // getters and setters.
 
     public ArrayList<Review> getReviews() {
         return reviews;
@@ -62,12 +73,12 @@ public class Product {
         this.imageURLs = imageURLs;
     }
 
-    public String getProductDesciption() {
-        return productDesciption;
+    public String getProductDescription() {
+        return productDescription;
     }
 
-    public void setProductDesciption(String productDesciption) {
-        this.productDesciption = productDesciption;
+    public void setProductDescription(String productDescription) {
+        this.productDescription = productDescription;
     }
 
     public ArrayList<Variant> getVariants() {
@@ -85,7 +96,7 @@ public class Product {
                 ", productName='" + productName + '\'' +
                 ", productCategory='" + productCategory + '\'' +
                 ", imageURLs=" + Arrays.toString(imageURLs) +
-                ", productDesciption='" + productDesciption + '\'' +
+                ", productDescription='" + productDescription + '\'' +
                 ", variants=" + variants +
                 '}';
     }

@@ -3,10 +3,10 @@
     "productName":" ",
     "productCategory":" ",
     "imageURLs": ["<Url1>","<Url2>","Url3"],
-    "productDesciption": " ",
-    "variants": {
+    "productDescription": " ",
+    "variants": [{
             "variantId": "",
-            "RAM": "",
+            "ram": "",
             "colour": "",
             "screenSize": "",
             "screenType": "",
@@ -21,6 +21,8 @@
             "networkDetails" : "",
             "speakerDetails" : "",
             "warrantyDetails" : ""
-    }
+    }, {
+
+    }]
 
 }

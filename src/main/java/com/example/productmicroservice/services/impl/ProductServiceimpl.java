@@ -13,23 +13,26 @@ import java.util.List;
 @Service
 public class ProductServiceimpl implements ProductService {
 
+
+    // variable for fetching the product repository.
+
     @Autowired
     private ProductRepository productRepository;
 
+
+    // method for getting a product.
+
     @Override
-    public ProductDTO getProduct(String id) {
-        System.out.println(id);
-        //System.out.println(employeeRepository.findAll());
-        Product product = productRepository.findOne(id);
-        System.out.println(product);
-        if(product==null) {
-            System.out.println("DNE");
-            return null;
-        }
+    public ProductDTO getProduct(String productId) {
+        System.out.println(productId);
+        Product product = productRepository.findOne(productId);
         ProductDTO productDTO = new ProductDTO();
         BeanUtils.copyProperties(product,productDTO);
         return productDTO;
     }
+
+
+    // method for adding a product to the database.
 
     @Override
     public void addProduct(ProductDTO productDTO) {
@@ -37,6 +40,9 @@ public class ProductServiceimpl implements ProductService {
         BeanUtils.copyProperties(productDTO,product);
         productRepository.save(product);
     }
+
+
+    // method for deleting a product.
 
     @Override
     public ProductDTO deleteProduct(String productId) {
@@ -48,10 +54,12 @@ public class ProductServiceimpl implements ProductService {
         return productDTO;
     }
 
+
+    // method for getting all the products falling a particular category.
+
     @Override
     public List<Product> findProductByCategory(String category) {
         return productRepository.findByProductCategory(category);
 
     }
-
 }

@@ -7,7 +7,7 @@ public class ProductDTO {
     private String productName;
     private String productCategory;
     private String[] imageURLs;
-    private String productDesciption;
+    private String productDescription;
     private ArrayList<Variant> variants;
     private ArrayList<Review> reviews;
 
@@ -51,12 +51,12 @@ public class ProductDTO {
         this.imageURLs = imageURLs;
     }
 
-    public String getProductDesciption() {
-        return productDesciption;
+    public String getProductDescription() {
+        return productDescription;
     }
 
-    public void setProductDesciption(String productDesciption) {
-        this.productDesciption = productDesciption;
+    public void setProductDescription(String productDescription) {
+        this.productDescription = productDescription;
     }
 
     public ArrayList<Variant> getVariants() {
